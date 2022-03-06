@@ -22,8 +22,9 @@ btnNavEl.addEventListener('click', function () {
 ///////////////////////////////////////////////////////////
 // smooth scrolling animation
 allLinks.forEach(function (link) {
+  // looping through navigation links
   link.addEventListener('click', function (e) {
-    e.preventDefault();
+    e.preventDefault(); // removes the default jump when clicking nav
     const href = link.getAttribute('href');
 
     // scroll back to top
@@ -44,6 +45,8 @@ allLinks.forEach(function (link) {
       header.classList.toggle('nav-open');
   });
 });
+
+// Modern Way
 
 ///////////////////////////////////////////////////////////
 // menu fade animation
@@ -107,5 +110,3 @@ allSections.forEach(function (section) {
 /////////////////////////////
 // Lazy Loading Images
 const imgTargets = document.querySelectorAll('img[data-src]');
-
-//  testing github change
