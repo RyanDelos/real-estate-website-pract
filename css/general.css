@@ -1,0 +1,152 @@
+/*
+
+-- 01 TYPOGRAPHY
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 
+/ 62 / 74 / 86 / 98
+
+- Font weights: 
+Default: 400
+Med: 500
+Semi-bold: 600
+Bold: 700
+
+- Line Heights: 
+Default: 1
+small: 1.05
+MEDIUM: 1.4
+paragraph default: 1.6
+
+-- 02 COLORS
+
+
+
+--- 02 Colors
+- Primary: #1971c2
+- Tints: #e8f1f9, #d1e3f3, #75AADA
+- Shades: #fff, #0f4474, 
+- Accents: 
+- Greys: #343a40, #333, #555
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER_RADIUS
+
+Default: 9px
+11px
+
+ 
+-- 07 WHITE SPACE
+
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cormorant Garamond';
+  color: #333;
+  background-color: #e8f1f9;
+  overflow-x: hidden;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES REUSABLE */
+/* ------------------------ */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.main-nav-link:active,
+.main-nav-link:hover,
+.menu-icon:active,
+.menu-icon:hover {
+  background-color: #d1e3f3;
+  color: #333;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* .btn {
+  float: left;
+  width: 18.7rem;
+  height: 18.7rem;
+  border-radius: 50%;
+} */
+
+.gallery-link:link,
+.gallery-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1.6rem;
+  border: 1px solid #000;
+  background-color: #0f4474;
+  transition: all 0.4s;
+}
+
+.gallery-link:active,
+.gallery-link:hover {
+  color: #0f4474;
+  border: 1px solid #0f4474;
+  background-color: #e8f1f9;
+}
+
+.btn-notified {
+  align-self: end;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  /* width: 100%; */
+  background-color: #0f4374;
+  border: none;
+  color: #e8f1f9;
+  transition: all 0.4s;
+}
+
+.btn-notified:hover {
+  background-color: #e8f1f9;
+  color: #0f4474;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #0f4474; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(162, 198, 231, 0.836);
+}

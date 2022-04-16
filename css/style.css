@@ -1,0 +1,405 @@
+/*****************************/
+/* HEADER */
+/*****************************/
+
+header {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../img/home-nav-bg.jpg);
+
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 4.8rem;
+  position: relative;
+}
+
+/*****************************/
+/* NAVIGATION */
+/*****************************/
+
+.nav.sticky {
+  background-color: rgba(15, 67, 116, 0.85);
+  position: fixed;
+}
+
+.nav-container {
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.5rem;
+  padding: 0 4rem;
+}
+
+/* .menu-nav {
+  font-size: 1.8rem;
+} */
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: #fff;
+}
+/* 
+.menu-icon {
+  height: 3rem;
+  width: 3rem;
+} */
+
+.logo {
+  height: 7rem;
+  filter: brightness(2.5);
+  opacity: 100%;
+
+  /* margin-top: 2.4rem;
+  margin-left: 2.4rem; */
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  padding: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/*****************************/
+/* HERO SECTION */
+/*****************************/
+
+.hero-section {
+  padding: 9.6rem 0;
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-size-adjust: none;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 7.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.hero-text {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.7;
+}
+
+/*****************************/
+/* SECTIONS */
+/*****************************/
+
+.section {
+  /* margin-top: 4.8rem; */
+  border-top: 1px solid #ddd;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/*****************************/
+/* ABOUT REALTOR */
+/*****************************/
+
+.section-realtor {
+  background-color: #e8f1f9;
+  /* margin-bottom: 8.6rem; */
+  padding: 4.8rem 0;
+}
+
+.realtor-container {
+  padding: 2.4rem;
+}
+
+.blanca-img {
+  width: 25rem;
+  height: 19rem;
+  border-radius: 5%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: end;
+}
+
+.realtor-text-box {
+  grid-column: 2 / -1;
+}
+
+.realtor-name {
+  color: #343a40;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.realtor-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/*****************************/
+/* FEATURED SECTION / LOGOS */
+/*****************************/
+
+.logos--container {
+  padding-bottom: 2.4rem;
+}
+
+.section-logos {
+  padding: 0 0 4.8rem;
+}
+
+.logos-heading {
+  text-align: center;
+  margin-top: 7.2rem;
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 70%;
+}
+
+/*****************************/
+/* GALLERY OF IMGS*/
+/*****************************/
+.section-gallery {
+  padding: 9.6rem 0;
+}
+
+.gallery-title-box {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.gallery-title {
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+.gallery-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.all-gallery {
+  text-align: center;
+  padding: 9.6rem;
+}
+
+/*****************************/
+/* CTA SECTION */
+/*****************************/
+.section-cta {
+  padding: 20rem;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.3)
+    ),
+    url(../img/living\ room.jpg);
+  background-size: cover;
+}
+
+.cta {
+  background-color: rgba(15, 67, 116, 0.5);
+  color: #fff;
+  padding: 2.4rem;
+}
+
+.cta-heading {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.cta-text-box {
+  padding: 2.4rem;
+}
+
+.cta-text {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  background-color: #d1e3f3;
+}
+
+.cta-form input::placeholder {
+  color: #333;
+  font-size: 1.6rem;
+}
+
+/*****************************/
+/* FOOTER*/
+/*****************************/
+.footer {
+  padding: 9.6rem;
+  background-color: #051727;
+  color: #fff;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 6.4rem;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #d1e3f3;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-top: auto;
+  color: #d1e3f3;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: #75aada;
+}
+
+.contacts {
+  color: #d1e3f3;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #d1e3f3;
+  cursor: pointer;
+}
+
+.footer-link:active,
+.footer-link:hover {
+  color: #75aada;
+}

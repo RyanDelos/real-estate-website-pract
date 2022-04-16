@@ -67,6 +67,7 @@ nav.addEventListener('mouseout', handleHover.bind(1));
 /////////////////////////////
 // Sticky animation
 const navHeight = nav.getBoundingClientRect().height;
+console.log(navHeight);
 
 const stickyNav = function (entries) {
   const [entry] = entries;

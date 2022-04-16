@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Demo: Custom Realtor Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav-container">
+        <a href="#">
+          <img
+            class="logo"
+            alt="funes realty logo"
+            src="img/funes-realty-logo.png"
+          />
+        </a>
+
+        <ul class="main-nav">
+          <li>
+            <a href="#about" class="nav_link main-nav-link">About</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav_link main-nav-link">Gallery</a>
+          </li>
+          <li>
+            <a href="#cta" class="nav_link main-nav-link">Contact Us</a>
+          </li>
+        </ul>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </nav>
+
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-container-inner">
+            <h1 class="hero-title">Funes Realty Group</h1>
+            <p class="hero-text">
+              Blanca Funes, the #1 realtor in the Bay Area
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section-realtor" id="about">
+        <div class="realtor-container container grid grid-3-col">
+          <div class="img-container">
+            <img
+              src="img/people/Blanca Funes.JPG"
+              alt="Blanca Funes"
+              class="blanca-img"
+            />
+          </div>
+          <div class="realtor-text-box">
+            <h2 class="realtor-name">Blanca Funes</h2>
+            <!-- <p class="realtor-status">The Billion dollar Woman</p> -->
+            <blockquote class="realtor-text">
+              Blanca brings a diverse perspective to real estate that translates
+              to successfully serving buyers and sellers in Contra Costa County.
+              She has a unique blend of skills, knowledge, professional
+              relationships and experiences that sets her apart in the industry.
+              She has designed, built, bought, and sold homes in the area since
+              2021. Familiar with all levels of building and design — from
+              engineering to finished interiors — she has a well-deserved
+              reputation in real estate.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-logos" id="featured-in">
+        <div class="container logos--container">
+          <h2 class="logos-heading">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/zillow.png" alt="zillow log" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="business insider log"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="New York Times log"
+            />
+            <img src="img/logos/forbes.png" alt="Forrbes log" />
+            <img src="img/logos/usa-today.png" alt="USA Today log" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-gallery" id="gallery">
+        <div class="gallery-title-box">
+          <h2 class="gallery-title">Explore Funes realty estates</h2>
+        </div>
+        <div class="gallery grid-2-2">
+          <figure class="gallery-item">
+            <img
+              src="img/home-spain.jpg"
+              alt="full-house house sf"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/kitchen.jpg" alt="kitchen" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/dining area.jpg"
+              alt="dining area"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery-item gallery-item--4">
+            <img src="img/home.jpg" alt="home" class="gallery-img" />
+          </figure>
+        </div>
+
+        <div class="all-gallery">
+          <a href="#" class="gallery-link"> View more </a>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="cta">
+        <div class="cta">
+          <div class="cta-textbox">
+            <h2 class="cta-heading">
+              Let us take the leg work out of house hunting
+            </h2>
+            <p class="cta-text">
+              Get the properties you're interested in delivered straight to your
+              inbox.
+            </p>
+            <form
+              class="cta-form"
+              action="mailto:delossantosrryan@gmail.com"
+              enctype="post"
+            >
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  required
+                  name="Your Name:"
+                  value=""
+                />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                  name="Your Email"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="Google">Google</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Other</option>
+                </select>
+              </div>
+
+              <button class="btn-notified">Get notified &rarr;</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="funes realty logo"
+              src="img/funes-realty-logo.png"
+            />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Funes Realty LLC.
+            All rights reserved
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">4321 Canada Valley Way Antioch, CA 94531</p>
+            <p>
+              <a class="footer-link" href="tel:415-123-4567"> 415-123-4567 </a>
+            </p>
+            <br />
+            <a class="footer-link" href="mailto:hello@funesrealtygroup.com">
+              hello@funesrealtygroup.com
+            </a>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Find your home</p>
+          <ul class="nav-footer">
+            <li><a class="footer-link" href="#gallery">Explore listings</a></li>
+            <li>
+              <a class="footer-link" href="#gallery"
+                >Portfolio of Active Properties</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#gallery"
+                >Portfolio of Exclusive Properties</a
+              >
+            </li>
+            <li><a class="footer-link" href="#gallery">Sold Properties</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Meet Blanca</p>
+          <ul class="nav-footer">
+            <li><a class="footer-link" href="#about">About Blanca Funes</a></li>
+            <li><a class="footer-link" href="#featured-in">Press</a></li>
+            <li><a class="footer-link" href="#about">Meet Our Team</a></li>
+            <li><a class="footer-link" href="#featured-in">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
